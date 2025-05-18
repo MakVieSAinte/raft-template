@@ -27,4 +27,32 @@ document.addEventListener('DOMContentLoaded', () => {
        updateCarousel();
      }
    });
+
+
+  //  ACCORDION
+
+  const items = document.querySelectorAll(".accordion-item");
+
+      items.forEach(item => {
+        const header = item.querySelector(".accordion-header");
+
+        header.addEventListener("click", () => {
+          const openItem = document.querySelector(".accordion-item.open");
+          if (openItem && openItem !== item) {
+            openItem.classList.remove("open");
+            openItem.querySelector(".accordion-content").style.maxHeight = null;
+          }
+
+          item.classList.toggle("open");
+          const content = item.querySelector(".accordion-content");
+
+          if (item.classList.contains("open")) {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            content.style.maxHeight = null;
+          }
+        });
+      });
+
+  
 })
