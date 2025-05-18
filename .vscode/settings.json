@@ -1,5 +1,6 @@
 {
     "editor.fontFamily": "Proggy, Consolas, monospace",
     "editor.tabSize": 3,
-    "editor.cursorStyle": "line-thin"
+    "editor.cursorStyle": "line-thin",
+    "liveServer.settings.port": 5501
 }
