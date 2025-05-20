@@ -55,4 +55,56 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
   
+
+       // Mobile Menu Logic
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const openIcon = mobileMenuButton.querySelector('.open-icon');
+  const closeIcon = mobileMenuButton.querySelector('.close-icon');
+  
+  let isMenuOpen = false;
+
+  function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    
+    // Toggle menu visibility
+    if (isMenuOpen) {
+      mobileMenu.classList.remove('translate-x-full');
+      openIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    } else {
+      mobileMenu.classList.add('translate-x-full');
+      openIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+      document.body.style.overflow = ''; // Restore scrolling
+    }
+  }
+
+  // Toggle menu on button click
+  mobileMenuButton.addEventListener('click', toggleMenu);
+
+  // Close menu when clicking on a link
+  const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (isMenuOpen) toggleMenu();
+    });
+  });
+
+  // Close menu on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isMenuOpen) {
+      toggleMenu();
+    }
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (isMenuOpen && !mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+      toggleMenu();
+    }
+  });
+
+  
 })

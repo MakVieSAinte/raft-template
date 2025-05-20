@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" translate="yes">
+  <head>
+    <!-- ==== Meta données ==== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="INDEX, FOLLOW" />
+    <!-- ==== Theme couleur ==== -->
+    <meta name="theme-color" content="#1EE31E" />
+    <meta name="msapplication-TileColor" content="#1EE31E" />
+    <!-- ==== Meta ogg pour le partage ==== -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="fintech" />
+    <meta property="og:image" content="./assets/images/bg.png" />
+    <meta property="og:title" content="RAFT" />
+    <meta
+      property="og:description"
+      content="Bienvenue sur notre page de téléchargement. Accédez rapidement à vos résultats pour préparer votre rentrée."
+    />
+    <title>RAFT | By MakVieSAinte</title>
+    <!-- ==== Favicon du site web ==== -->
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/images/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./assets/images/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/images/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/logo.png"
+    />
+    <!-- ==== Css fichiers ==== -->
+    <link rel="stylesheet" type="text/css" href="./dist/output.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/input.css" />
+    <!-- ==== Police d'ecriture & icones ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script type="modules" defer src="./vercel-analytics.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+    extend: {
+      fontSize: {
+        'base-mini':   '18px',
+        'base':   '24px',
+      },
+      colors: { 
+        'primary': '#2B892E', 
+        'secondary': '#3D3D3D', 
+        'secondary-two': '#BDBDBD', 
+        'secondary-three': '#DCDCDC', 
+      },
+      backgroundImage: {
+        'grid-bg': "url('./assets/images/grid-bg.png')",
+        'hero-bg': "url('./assets/images/bg-hero.png')",
+        'grid-bento': "url('./assets/images/bento/grid-bento.png')",
+        'grid-bento-2': "url('./assets/images/bento/grid-bento-2.png')",
+      },
+    },
+  },
+    }
+    </script>
+  </head>
+
+  <body>
+    <!-- ==== Header ==== -->
+    <header class="">
+      <div class="container-fluid mx-auto">
+        <div class="flex items-center justify-between px-[40px] py-[16px] border-b-[0.3px] border-secondary">
+          <a href="./index.html" class="text-2xl flex gap-[4px] flex-basis-0 font-bold text-green-500"
+            >
+            <img src="./assets/images/logo.svg" alt="logo" width="30px" height="30px">
+            <span class="text-white text-base">Raft</span>
+            </a
+          >
+          <nav class="flex flex-basis-0 justify-center flex-grow gap-[60px]">
+            <ul class="flex space-x-4">
+              <li>
+                <a
+                  href="./index.html"
+                  class="text-secondary-two hover:text-white"
+                  >Solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./about.html"
+                  class="text-secondary-two hover:text-white"
+                  >Learn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contact.html"
+                  class="text-secondary-two hover:text-white"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <div class="flex gap-[16px]">     
+              <button class="px-[12px] py-[8px] rounded-[100px] text-white text-[16px]">Login</button>   
+              <button class="bg-primary px-[12px] py-[8px] rounded-[100px] text-white text-[16px]">Get started</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mx-auto bg-grid-bg bg-cover max-sm:w-full w-[896px] h-[443px] max-sm:max-h-max max-sm:pt-5 max-sm:justify-center flex flex-col items-center justify-start mt-[120px] max-sm:px-4 max-sm:mt-2 max-sm:pb-4">
+          
+          <span class="flex items-center justify-center gap-[10px] max-sm:gap-4 text-base-mini max-sm:text-[13px] font-medium text-white bg-[#989898]/10 border-[0.2px] border-[#989898]/10 px-[20px] max-sm:px-10 py-[6px]  max-sm:py-[4px] rounded-[100px]">
+            Introducing Raft Cards
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-[14px] max-sm:w-[9px]" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>            
+          </span>
+
+          <h1 class="text-white text-[96px] max-sm:text-[45px] text-center leading-[1] mt-[4px] max-sm:mt-6">
+            Building the future of banking.
+          </h1>
+          <span class="w-[568px] max-sm:w-full text-secondary-two text-base max-sm:text-base-mini text-center mt-6">Experience the future of banking with RAFT. We're here to empower your financial journey.</span>
+
+          <button class="bg-primary px-[20px] py-[8px] mt-5 rounded-[100px] text-white text-[16px] max-sm:w-full max-sm:mx-1">Get started</button>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+
+      <!-- HERO -->
+
+      <section class="container hero-bg mx-auto mt-[50px] rounded-md overflow-hidden max-sm:mt-5 max-sm:px-4"> 
+          <img src="./assets/images/bg-hero.png" alt="image hero" class="w-full h-full object-cover max-sm:h-[400px] rounded-md overflow-hidden" />
+        </section>
+
+        <!-- SECTION PARTENAIRES -->
+
+        <section>
+          <div class="container mx-auto flex flex-col items-center justify-center my-[100px]">
+            <h2 class="text-secondary-two text-[20px] text-center leading-tight uppercase">Featured and seen in</h2>
+            <div class="flex flex-wrap items-center justify-center gap-[80px] mt-[40px]">
+              <img src="./assets/images/logo/Forbes.svg" alt="">
+              <img src="./assets/images/logo/cnbc.svg" alt="">
+              <img src="./assets/images/logo/bloomberg.svg" alt="">
+              <img src="./assets/images/logo/reuters.svg" alt="">
+              <img src="./assets/images/logo/cnn.svg" alt="">
+            </div>
+        </section>
+
+        <!-- SECTION BENTO -->
+
+        <section class="mt-20 flex items-center justify-center flex-col">
+          <h1 class="w-[896px] mx-auto px-20 text-[76px] text-white text-center leading-[1]">Elevate Your Financial Journey with RAFT</h1>
+          <span class="w-[568px] text-secondary-two text-base-mini text-center mt-6">RAFT offers a world of financial possibilities. From investments to payments, we've got you covered. Join us and unlock your financial potential today.</span>
+
+          <br>
+
+          <div>
+            <div class="max-w-7xl mx-auto space-y-6 mt-16 px-20">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                  <div class="col-span-2 bg-[#131313] flex flex-col justify-between px-8 py-10 border rounded-[12px] border-gray-700/30 custom-border-bento">
+                    
+                      <div class="w-full h-[70%] relative flex items-center justify-center space-x-2 mb-4 bg-grid-bento object-cover overflow-hidden rounded-[8px]">
+                        <img src="./assets/images/bento/bento-1.svg" alt="" class="object-cover z-10" />
+
+                          <div class="absolute !p-0 !mx-0 space-x-0 inset-0 bg-gradient-to-b from-transparent to-[#131313] z-20 pointer-events-none"></div>
+                      </div>
+                      
+                      <div class="flex flex-col items-start justify-center">
+                        <h2 class="text-[32px] font-medium text-white mb-1 mt-5">Seamless Payments</h2>
+                        <p class="w-[60%] text-secondary-two text-base-mini">
+                            Enjoy secure, seamless transactions that make managing your money a breeze.
+                        </p>
+                      </div>
+                  </div>
+      
+                  <div class="bg-[#131313] flex flex-col justify-between pl-8 py-10 border rounded-[12px] border-gray-700/30 custom-border-bento">
+                    <div class="w-full h-[100%] relative flex items-center justify-center space-x-2 mb-4 bg-grid-bento-2 object-cover overflow-hidden rounded-[8px]">
+                      <img src="./assets/images/bento/bento-2.svg" alt="" class="object-cover z-10">
+                      <div class="absolute !p-0 !mx-0 space-x-0 inset-0 bg-gradient-to-b from-transparent to-[#131313] z-20 pointer-events-none"></div>
+                  </div>
+                  <div class="flex flex-col items-start justify-center pr-6">
+                    <h2 class="text-[32px] font-medium text-white mb-1 mt-5">Smart Investing</h2>
+                    <p class="text-secondary-two text-base-mini">
+                      Grow your wealth confidently with our personalized investment solutions, tailored to your financial goals.
+                    </p>
+                  </div>
+                      
+                  </div>
+              </div>
+              
+              <!-- 2 -->
+               
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      
+                  <div class="bg-[#131313] flex flex-col justify-between px-8 py-10 border rounded-[12px] border-gray-700/30 custom-border-bento">
+                    <div class="w-full h-[50%] relative flex items-center justify-center flex-grow space-x-2 mt-5 bg-grid-bento-2 object-cover overflow-hidden rounded-[8px]">
+                      <img src="./assets/images/bento/bento-3.svg" alt="" class="object-cover z-10">
+                      <div class="absolute !p-0 !mx-0 space-x-0 inset-0 bg-gradient-to-b from-transparent to-[#131313] z-20 pointer-events-none"></div>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <h2 class="text-[32px] font-medium text-white mb-1 mt-5">Wealth Management</h2>
+                    <p class="text-secondary-two text-base-mini">
+                      Make informed decisions for your financial future with our wealth management expertise.
+                    </p>
+                  </div>
+                      
+                  </div>
+
+                  <div class="col-span-2 bg-[#131313] flex flex-col justify-between px-8 py-10 border rounded-[12px] border-gray-700/30 custom-border-bento">
+                    
+                    <div class="w-full h-[70%] relative flex items-center justify-center space-x-2 mb-4 bg-grid-bento object-cover overflow-hidden rounded-[8px]">
+                        <img src="./assets/images/bento/bento-4.svg" alt="" class="object-cover z-10">
+                        <div class="absolute !p-0 !mx-0 space-x-0 inset-0 bg-gradient-to-b from-transparent to-[#131313] z-20 pointer-events-none"></div>
+                    </div>
+                    <div class="flex flex-col items-start justify-center">
+                      <h2 class="text-[32px] font-medium text-white mb-1 mt-5">Financial Planning</h2>
+                      <p class="w-[90%] text-secondary-two text-base-mini">
+                        Achieve your financial dreams with our comprehensive financial planning services, guiding you toward a secure future.
+                      </p>
+                    </div>
+                </div>
+
+              </div>
+
+
+          </div>
+          </div>
+        </section>
+
+        <!-- SECTION FREEDOM -->
+
+        <section class="mt-20 flex items-center justify-center flex-col">
+          <h1 class="w-[896px] mx-auto px-20 text-[76px] text-white text-center leading-[1]">Your Financial Freedom, Your Way</h1>
+          <span class="w-[568px] text-secondary-two text-base-mini text-center mt-6">We believe that managing your finances should be effortless and cost-effective. That's why we offer you the freedom you deserve</span>
+
+          <div class="container hero-bg mx-auto mt-[120px]"> 
+            <img src="./assets/images/freedom.png" alt="image hero" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="container mx-auto mt-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 flex-grow">
+                <div class="p-0">
+                    <div class="flex flex-grow items-center mb-4">
+
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white mr-2" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path d="M12 7.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" />
+                        <path fill-rule="evenodd" d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 14.625v-9.75ZM8.25 9.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM18.75 9a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V9.75a.75.75 0 0 0-.75-.75h-.008ZM4.5 9.75A.75.75 0 0 1 5.25 9h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75V9.75Z" clip-rule="evenodd" />
+                        <path d="M2.25 18a.75.75 0 0 0 0 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 0 0-.75-.75H2.25Z" />
+                      </svg>
+                        <h3 class="text-[24px] font-medium text-white leading-[0px]">No minimum balance fees</h3>
+                    </div>
+                    <p class="text-secondary-two text-base-mini">
+                        Say goodbye to minimum balance fees. Your account, your balance—no hidden charges.
+                    </p>
+                </div>
+                
+                <div class="p-0">
+                    <div class="flex flex-grow items-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white mr-2" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path d="M21 6.375c0 2.692-4.03 4.875-9 4.875S3 9.067 3 6.375 7.03 1.5 12 1.5s9 2.183 9 4.875Z" />
+                        <path d="M12 12.75c2.685 0 5.19-.586 7.078-1.609a8.283 8.283 0 0 0 1.897-1.384c.016.121.025.244.025.368C21 12.817 16.97 15 12 15s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.285 8.285 0 0 0 1.897 1.384C6.809 12.164 9.315 12.75 12 12.75Z" />
+                        <path d="M12 16.5c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 0 0 1.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 0 0 1.897 1.384C6.809 15.914 9.315 16.5 12 16.5Z" />
+                        <path d="M12 20.25c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 0 0 1.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 0 0 1.897 1.384C6.809 19.664 9.315 20.25 12 20.25Z" />
+                      </svg>
+                        <h3 class="text-[24px] font-medium text-white leading-[0px]">No monthly fees</h3>
+                    </div>
+                    <p class="text-secondary-two text-base-mini">
+                      Bank with us without worrying about monthly fees. Keep more of your money where it belongs—in your account.
+                    </p>
+                </div>
+                
+                <div class="p-0">
+                    <div class="flex flex-grow items-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white mr-2" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd" d="M15.97 2.47a.75.75 0 0 1 1.06 0l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H7.5a.75.75 0 0 1 0-1.5h11.69l-3.22-3.22a.75.75 0 0 1 0-1.06Zm-7.94 9a.75.75 0 0 1 0 1.06l-3.22 3.22H16.5a.75.75 0 0 1 0 1.5H4.81l3.22 3.22a.75.75 0 1 1-1.06 1.06l-4.5-4.5a.75.75 0 0 1 0-1.06l4.5-4.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+                      </svg>
+                      
+                        <h3 class="text-[24px] font-medium text-white leading-[0px]">No bank transfer fees</h3>
+                    </div>
+                    <p class="text-secondary-two text-base-mini">
+                      Seamlessly transfer funds without the extra cost. Send and receive money with zero bank transfer fees.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        </section>
+
+        <br>
+
+        <!-- SECTION SMART IN GREEN -->
+
+        <section class="container-fluid bg-[#48D64C] h-screen mt-20 flex items-start justify-center flex-col">
+          <h1 class="mx-auto px-20 text-[128px] text-[#070606] text-left leading-[1]">Smart investments, secure payments,
+            and expert guidance, all in one place.</h1>
+        </section>
+
+        <!-- SECTION FUTURE -->
+
+        <section class="container-fluid mt-20 flex items-start justify-center flex-col">
+          <h1 class="w-[896px] pl-20 text-[76px] text-white text-left leading-[1]">Confidently Shape Your Financial Future</h1>
+          <span class="w-[568px] pl-20 text-secondary-two text-base-mini text-left mt-6"> At RAFT, we empower you to confidently shape your financial future.Our modern approach simplifies saving and investing, making it easier than ever.</span>
+
+          <br>
+
+          <div class="max-w-7xl mx-auto space-y-6 mt-16 px-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    
+                <div class="bg-[#131313] flex flex-col justify-between px-8 py-10 border rounded-[12px] border-gray-700/30 custom-border-bento">
+                  <div class="flex flex-col items-start justify-center">
+                    <h2 class="text-[32px] font-medium text-white mb-1">Spend better</h2>
+                    <p class="text-secondary-two text-base-mini">
+                      Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.
+                    </p>
+                  </div>
+                  <div class="w-full h-[50%] flex items-center justify-center space-x-2 py-10 mb-4 bg-grid-bento-2 object-cover">
+                    <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M85.4167 83.5833C85.4167 88.0833 86.6667 88.75 89.5 89.75L93.75 91.25V77.0833H91.25C88.0834 77.0833 85.4167 80 85.4167 83.5833Z" fill="#202020"/>
+                      <path d="M106.25 122.917H108.75C112 122.917 114.583 120 114.583 116.417C114.583 111.917 113.333 111.25 110.5 110.25L106.25 108.75V122.917Z" fill="#202020"/>
+                      <path d="M163.167 45.6667L146.083 62.75C144.833 64 143.25 64.5834 141.667 64.5834C140.083 64.5834 138.5 64 137.25 62.75C134.833 60.3334 134.833 56.3334 137.25 53.9167L154.333 36.8334C139.667 24.3334 120.75 16.6667 100 16.6667C54 16.6667 16.6667 54 16.6667 100C16.6667 146 54 183.333 100 183.333C146 183.333 183.333 146 183.333 100C183.333 79.25 175.667 60.3334 163.167 45.6667ZM114.583 98.5C119.917 100.417 127.083 104.25 127.083 116.5C127.083 126.917 118.833 135.5 108.75 135.5H106.25V137.583C106.25 141 103.417 143.833 100 143.833C96.5834 143.833 93.75 141 93.75 137.583V135.5H93.0834C82 135.5 72.9167 126.167 72.9167 114.667C72.9167 111.167 75.75 108.333 79.1667 108.333C82.5834 108.333 85.4167 111.167 85.4167 114.583C85.4167 119.167 88.8334 122.917 93.0834 122.917H93.75V104.417L85.4167 101.5C80.0834 99.5834 72.9167 95.75 72.9167 83.5C72.9167 73.0834 81.1667 64.5 91.25 64.5H93.75V62.5C93.75 59.0834 96.5834 56.25 100 56.25C103.417 56.25 106.25 59.0834 106.25 62.5V64.5834H106.917C118 64.5834 127.083 73.9167 127.083 85.4167C127.083 88.8334 124.25 91.6667 120.833 91.6667C117.417 91.6667 114.583 88.8334 114.583 85.4167C114.583 80.8334 111.167 77.0834 106.917 77.0834H106.25V95.5834L114.583 98.5Z" fill="#202020"/>
+                      <path d="M189.083 14.25C188.417 12.75 187.25 11.5 185.667 10.8334C184.917 10.5834 184.167 10.4167 183.333 10.4167H150C146.583 10.4167 143.75 13.25 143.75 16.6667C143.75 20.0834 146.583 22.9167 150 22.9167H168.25L154.333 36.8334C157.5 39.5834 160.417 42.5 163.167 45.6667L177.083 31.75V50C177.083 53.4167 179.917 56.25 183.333 56.25C186.75 56.25 189.583 53.4167 189.583 50V16.6667C189.583 15.8334 189.417 15.0834 189.083 14.25Z" fill="#202020"/>
+                      </svg>
+                </div>
+                    
+                </div>
+                
+                <div class="bg-[#131313] flex flex-col justify-between px-8 py-10 border rounded-[12px] border-gray-700/30 custom-border-bento">
+                  <div class="flex flex-col items-start justify-center">
+                    <h2 class="text-[32px] font-medium text-white mb-1">Invest better</h2>
+                    <p class="text-secondary-two text-base-mini">
+                      Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.
+                    </p>
+                  </div>
+                  <div class="w-full h-[50%] flex items-center justify-center space-x-2 py-10 mb-4 bg-grid-bento-2 object-cover">
+                    <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M99.5 18.4167L79.4167 65.1667H59.3333C56 65.1667 52.75 65.4167 49.5833 66.0833L57.9167 46.0833L58.25 45.3333L58.75 44C59 43.4167 59.1667 42.9167 59.4167 42.5C69.0833 20.0833 79.9167 13.0833 99.5 18.4167Z" fill="#202020"/>
+                    <path d="M156.083 67.4167L155.917 67.3333C150.917 65.9167 145.833 65.1667 140.667 65.1667H88.5L107.25 21.5833L107.5 21C108.667 21.4167 109.917 22 111.167 22.4167L129.583 30.1667C139.833 34.4167 147 38.8333 151.417 44.1667C152.167 45.1667 152.833 46.0833 153.5 47.1667C154.25 48.3333 154.833 49.5 155.167 50.75C155.5 51.5 155.75 52.1667 155.917 52.9167C157.167 57.1667 157.25 62 156.083 67.4167Z" fill="#202020"/>
+                    <path d="M152.417 79.3334C148.667 78.25 144.75 77.6667 140.667 77.6667H59.3333C53.6667 77.6667 48.3333 78.75 43.3333 80.9167C28.8333 87.1667 18.6667 101.583 18.6667 118.333V134.583C18.6667 136.583 18.8333 138.5 19.0833 140.5C20.9167 167 35.0833 181.167 61.5833 182.917C63.5 183.167 65.4167 183.333 67.5 183.333H132.5C163.333 183.333 179.583 168.667 181.167 139.5C181.25 137.917 181.333 136.25 181.333 134.583V118.333C181.333 99.9167 169.083 84.4167 152.417 79.3334ZM120.833 139.583H79.1667C75.75 139.583 72.9167 136.75 72.9167 133.333C72.9167 129.917 75.75 127.083 79.1667 127.083H120.833C124.25 127.083 127.083 129.917 127.083 133.333C127.083 136.75 124.25 139.583 120.833 139.583Z" fill="#202020"/>
+                    </svg>
+                </div>
+                </div>
+            </div>
+
+
+            <!-- STATS -->
+
+            <div class="container mx-auto mt-20">
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-8 flex-grow">
+                  <div class="flex flex-grow items-center flex-col mb-4 p-0">
+                          <h3 class="text-[70px] font-bold text-white">50<span class="text-[60px] italic p-0 m-0">+</span></h3>
+                          <span class="text-secondary-two">CITIES</span>
+                  </div>
+                  
+                  <div class="flex flex-grow items-center flex-col mb-4 p-0">
+                          <h3 class="text-[70px] font-bold text-white">50,000<span class="text-[60px] italic p-0 m-0">+</span></h3>
+                          <span class="text-secondary-two">TRANSACTIONS</span>
+                  </div>
+                  
+                  <div class="flex flex-grow items-center flex-col mb-4 p-0">
+                          <h3 class="text-[70px] font-bold text-white">3M<span class="text-[60px] italic p-0 m-0">+</span></h3>
+                          <span class="text-secondary-two">USERS</span>
+                  </div>
+                  
+                  
+                  <div class="flex flex-grow items-center flex-col mb-4 p-0">
+                          <h3 class="text-[70px] font-bold text-white">5</h3>
+                          <span class="text-secondary-two">USER RATINGS</span>
+                  </div>
+  
+  
+              </div>
+          </div>
+
+          
+        </div>
+        <div class="container-fluid bg-[#48D64C] h-screen  mx-auto mt-28 flex items-start justify-center flex-col">
+          <img src="./assets/images/financial.png" alt="" width="100%" height="100%" class="object-cover">
+        </div>
+        </section>
+
+        <!-- SECTION INTRODUCONG -->
+
+        <section class="mt-20 flex items-center justify-center flex-col">
+          <span class="w-[568px] text-primary text-base-mini text-center uppercase my-6">INTRODUCING</span>
+          <h1 class="w-[896px] mx-auto px-20 text-[76px] text-white text-center leading-[1]">Introducing RAFT's Next-Gen Cards</h1>
+          <span class="w-[568px] text-secondary-two text-base-mini text-center mt-6">Discover RAFT's latest innovation – our new cards. Elevate your banking experience with cutting-edge features, security, and unprecedented convenience.</span>
+
+          <!-- <div class="container my-8 bg-slate-600 !h-[300px] block"> -->
+            <div class="mx-auto w-[310px] h-max my-12">
+              <img src="./assets/images/card.svg" alt="" width="100%" height="100%" class="object-cover">
+            </div>
+          <!-- </div> -->
+
+          <!--  -->
+
+          <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 flex-grow">
+                <div class="p-0">
+                    <div class="flex flex-grow items-center mb-4">
+
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white mr-2" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z" />
+                        <path d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V7.875C3 6.839 3.84 6 4.875 6Z" />
+                      </svg>
+
+                      
+                        <h3 class="text-[24px] font-medium text-white leading-[0px]">Contactless Technology</h3>
+                    </div>
+                    <p class="text-secondary-two text-base-mini">
+                      Our new cards come equipped with contactless technology, allowing you to make swift, secure payments with a simple tap.
+                    </p>
+                </div>
+                
+                <div class="p-0">
+                    <div class="flex flex-grow items-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white mr-2" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd" d="M4.5 3.75a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V6.75a3 3 0 0 0-3-3h-15Zm4.125 3a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Zm-3.873 8.703a4.126 4.126 0 0 1 7.746 0 .75.75 0 0 1-.351.92 7.47 7.47 0 0 1-3.522.877 7.47 7.47 0 0 1-3.522-.877.75.75 0 0 1-.351-.92ZM15 8.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15ZM14.25 12a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H15a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15Z" clip-rule="evenodd" />
+                      </svg>
+                      
+                        <h3 class="text-[24px] font-medium text-white leading-[0px]">Personalization</h3>
+                    </div>
+                    <p class="text-secondary-two text-base-mini">
+                      Customize your card to reflect your unique style. Choose from a range of designs that suit your personality.
+                    </p>
+                </div>
+                
+                <div class="p-0">
+                    <div class="flex flex-grow items-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white mr-2" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
+                      </svg>
+                      
+                      
+                        <h3 class="text-[24px] font-medium text-white leading-[0px]">Enhanced Security</h3>
+                    </div>
+                    <p class="text-secondary-two text-base-mini">
+                      Your peace of mind is our priority. Our cards feature advanced security measures to protect your transactions and data.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        </section>
+
+        <!-- SECTION TESTIMONIAL -->
+
+        <section>
+          <div class="bg-[#48D64C] text-black py-16 px-6 md:px-20 mt-20">
+          <h1 class="w-[896px] mx-auto px-20 text-[76px] text-center leading-[1] mb-28">Join over 3 million members</h1>
+
+          
+            <!-- Carousel viewport -->
+            <div class="overflow-hidden">
+              <div
+                id="carousel-track"
+                class="flex transition-transform duration-500 ease-in-out"
+                style="transform: translateX(0%)"
+              >
+                <!-- Testimonials -->
+                <div class="w-full md:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0">
+                  <p class="mb-6">
+                    RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I've never felt more confident about my financial future.
+                  </p>
+                  <div class="flex items-center space-x-4">
+                    <img src="https://randomuser.me/api/portraits/men/54.jpg" class="w-10 h-10 rounded-full" />
+                    <div>
+                      <p class="font-semibold">Valmy Mabikaka</p>
+                      <p class="text-sm text-gray-900">Happy RAFT User</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="w-full md:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0">
+                  <p class="mb-6">
+                    I can't express how grateful I am to RAFT. Their wealth management services have been a game-changer for my family's financial security. The expert guidance and personalized strategies have given us peace of mind, knowing that our future is in capable hands.
+                  </p>
+                  <div class="flex items-center space-x-4">
+                    <img src="https://randomuser.me/api/portraits/men/59.jpg" class="w-10 h-10 rounded-full" />
+                    <div>
+                      <p class="font-semibold">Cameron Williamson</p>
+                      <p class="text-sm text-gray-900">Happy RAFT User</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="w-full md:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0">
+                  <p class="mb-6">
+                    RAFT's financial planning services have been a lifeline for me. I always struggled with managing my money, but their team crafted a tailored plan that addressed my goals and concerns. It's been a game-changer in achieving my financial dreams
+                  </p>
+                  <div class="flex items-center space-x-4">
+                    <img src="https://randomuser.me/api/portraits/women/50.jpg" class="w-10 h-10 rounded-full" />
+                    <div>
+                      <p class="font-semibold">Esther Howard</p>
+                      <p class="text-sm text-gray-900">Happy RAFT User</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Ajouter d'autres témoignages ici -->
+                <div class="w-full md:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0">
+                  <p class="mb-6">
+                    I never thought I could feel confident about my finances until I found RAFT. Their support team listened to my goals and helped me build a strategy that finally makes sense. I'm no longer anxious about the future.
+                  </p>
+                  <div class="flex items-center space-x-4">
+                    <img src="https://randomuser.me/api/portraits/men/25.jpg" class="w-10 h-10 rounded-full" />
+                    <div>
+                      <p class="font-semibold">Jane Doe</p>
+                      <p class="text-sm text-gray-900">Happy RAFT User</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-full md:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0">
+                  <p class="mb-6">
+                    Thanks to RAFT, I’ve gone from paycheck to paycheck to actually saving and investing wisely. Their platform is intuitive, and their advice has truly changed how I think about money.
+                  </p>
+                  <div class="flex items-center space-x-4">
+                    <img src="https://randomuser.me/api/portraits/women/62.jpg" class="w-10 h-10 rounded-full" />
+                    <div>
+                      <p class="font-semibold">Janis Kilolo</p>
+                      <p class="text-sm text-gray-900">Happy RAFT User</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Buttons -->
+            <div class="flex justify-end space-x-4 mt-12">
+              <button
+                id="prevBtn"
+                class="w-10 h-10 flex items-center justify-center bg-white rounded-full hover:bg-gray-200 border border-black transition"
+              >
+                <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                id="nextBtn"
+                class="w-10 h-10 flex items-center justify-center bg-white rounded-full hover:bg-gray-200 border border-black transition"
+              >
+                <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          
+        </section>
+
+
+        <!-- FAQ -->
+
+        <section class="my-20 px-20">
+            <h1 class="w-[696px] text-[76px] text-white text-left leading-[1]">Frequently asked questions</h1>
+        
+            <!-- Accordion Items -->
+            <div class="container m-auto mt-20">
+              <!-- Item 1 -->
+              <div class="accordion-item border-b border-gray-700/20">
+                <button class="accordion-header text-white w-full text-left py-6 text-base font-medium flex justify-between items-center">
+                  How do I create an account with RAFT?
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                    
+                  </span>
+                </button>
+                <div class="accordion-content overflow-hidden transition-all max-h-0 text-base text-secondary-two">
+                  <p class="pt-2 pb-8 pl-4">To create an account with RAFT, simply download the app or visit our website and follow the registration process.</p>
+                </div>
+              </div>
+        
+              <!-- Item 2 -->
+              <div class="accordion-item border-b border-gray-700/20">
+                <button class="accordion-header text-white w-full text-left py-6 text-base font-medium flex justify-between items-center">
+                  How does RAFT ensure the security of my financial data?
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion-content overflow-hidden transition-all max-h-0 text-base text-secondary-two">
+                  <p class="pt-2 pb-8 pl-4">RAFT uses bank-level encryption and two-factor authentication to ensure your data is always secure.</p>
+                </div>
+              </div>
+        
+              <!-- Item 3 -->
+              <div class="accordion-item border-b border-gray-700/20">
+                <button class="accordion-header text-white w-full text-left py-6 text-base font-medium flex justify-between items-center">
+                  What types of transactions can I perform with RAFT?
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion-content overflow-hidden transition-all max-h-0 text-base text-secondary-two">
+                  <p class="pt-2 pb-8 pl-4">With RAFT, you can transfer money, pay bills, invest, and more – all from one platform.</p>
+                </div>
+              </div>
+        
+              <!-- Item 4 -->
+              <div class="accordion-item border-b border-gray-700/20">
+                <button class="accordion-header text-white w-full text-left py-6 text-base font-medium flex justify-between items-center">
+                  What benefits does RAFT offer for wealth management?
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion-content overflow-hidden transition-all max-h-0 text-base text-secondary-two">
+                  <p class="pt-2 pb-8 pl-4">RAFT offers personalized wealth management tools, real-time insights, and expert support to help grow your assets.</p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer class="text-secondary-two py-6 md:py-10">
+          <div class="container mx-auto px-4">
+              <div class="flex flex-col md:flex-row items-center justify-between border-b border-gray-800 pb-6 mb-6">
+                  <div class="flex items-center mb-4 md:mb-0">
+                      <img src="https://via.placeholder.com/100x32" alt="Raft Logo" class="mr-4 h-8 w-auto">
+                      <span class="text-xl font-semibold text-white">Raft</span>
+                  </div>
+                  <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+                       <div class="flex flex-col items-start">
+                          <span class="block text-sm font-semibold text-white mb-2">Scan to download App on the Playstore and Appstore.</span>
+                          <div class="flex items-center gap-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 bg-gray-700 text-white p-2 rounded-md" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white"  fill="currentColor" viewBox="0 0 16 16">
+                                  <path d="M5.53.61a1 1 0 0 1 .8-.61H9.67a1 1 0 0 1 .8.61L12.5 3H3.5L5.53.61zM15 4v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h.26a2 2 0 0 0 1.94 1.51A2 2 0 0 0 5.37 4H10.63a2 2 0 0 0 1.17.51 2 2 0 0 0 1.94-1.51H14.74M4 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m7 0a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+                              </svg>
+                               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 16 16">
+                                  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zM8 1a7 7 0 0 1 7 7 7 7 0 0 1-7 7 7 7 0 0 1-7-7 7 7 0 0 1 7-7z"/>
+                                  <path d="M8 4a.905.905 0 0 0-.9.995h.35a.5.5 0 0 1 .632.321L8 8.93l1.018-3.688a.5.5 0 0 1 .632-.321h.35A.905.905 0 0 0 8 4z"/>
+                                  <path d="M8 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+                              </svg>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div class="flex flex-col">
+                      <h3 class="text-sm font-semibold text-white mb-2">About Us</h3>
+                      <ul class="text-sm">
+                          <li class="mb-1"><a href="#" class="hover:text-blue-400">Our company</a></li>
+                          <li class="mb-1"><a href="#" class="hover:text-blue-400">Careers</a></li>
+                          <li class="mb-1"><a href="#" class="hover:text-blue-400">Press kits</a></li>
+                          <li class="mb-1"><a href="#" class="hover:text-blue-400">About us</a></li>
+                      </ul>
+                  </div>
+                  <div class="flex flex-col">
+                      <h3 class="text-sm font-semibold text-white mb-2">Legal</h3>
+                      <ul class="text-sm">
+                          <li class="mb-1"><a href="#" class="hover:text-blue-400">Terms of use</a></li>
+                          <li class="mb-1"><a href="#" class="hover:text-blue-400">Privacy policy</a></li>
+                      </ul>
+                  </div>
+                  <div class="flex flex-col">
+                      <h3 class="text-sm font-semibold text-white mb-2">Support</h3>
+                      <ul class="text-sm">
+                          <li class="mb-1"><a href="#" class="hover:text-blue-400">Contact us</a></li>
+                          <li class="mb-1"><a href="#" class="hover:text-blue-400">FAQ</a></li>
+                      </ul>
+                  </div>
+              </div>
+      
+              <div class="flex flex-col md:flex-row items-center justify-between mt-6 pt-6 border-t border-gray-800">
+                  <div class="mb-4 md:mb-0">
+                      <select class="bg-gray-800 border border-gray-700 rounded-md text-sm text-gray-400 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                          <option>English (United Kingdom)</option>
+                          <option>Français (France)</option>
+                          <option>Español (España)</option>
+                      </select>
+                  </div>
+                  <p class="text-sm text-gray-500">© Raft Corp, LLC.</p>
+              </div>
+          </div>
+      </footer>
+      
+
+    </main>
+
+    <!-- ==== Script ==== -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
+
+<!-- ==== 925DEV ==== -->

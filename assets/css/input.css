@@ -128,4 +128,28 @@ body {
                      linear-gradient(180deg, rgba(255, 255, 255, 0.466) 0%, rgba(255, 255, 255, 0.356) 74.04%);
   border-image-slice: 1;
 }
+
+
+
+/* Mobile Menu Styles */
+#mobile-menu {
+  visibility: visible;
+  transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu.translate-x-full {
+  visibility: hidden;
+}
+
+.mobile-menu-open {
+  overflow: hidden;
+}
+
+/* Animation pour le bouton */
+.open-icon, .close-icon {
+  transition: opacity 0.2s ease-in-out;
+}
+
+
+
  /*  ==== 925DEV ====  */
