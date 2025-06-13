@@ -7,53 +7,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="robots" content="INDEX, FOLLOW" />
+    <!-- Contrôle du cache et sécurité -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' https:; img-src 'self' https: data:; style-src 'self' https: 'unsafe-inline';"
+    />
+    <!-- Meta pour l'accessibilité -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- OpenGraph amélioré -->
+    <meta property="og:site_name" content="RAFT" />
+    <meta property="og:url" content="https://raft.com" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="RAFT Application Interface" />
+    <!-- Meta SEO -->
+    <meta
+      name="description"
+      content="RAFT - Votre partenaire financier intelligent. Solutions de paiement, investissement et gestion de patrimoine simplifiées."
+    />
+    <meta
+      name="keywords"
+      content="fintech, paiements, investissement, gestion de patrimoine, carte bancaire, finance personnelle"
+    />
+    <meta name="author" content="MakVieSAinte" />
+    <meta name="application-name" content="RAFT" />
     <!-- ==== Theme couleur ==== -->
-    <meta name="theme-color" content="#1EE31E" />
-    <meta name="msapplication-TileColor" content="#1EE31E" />
+    <meta name="theme-color" content="#111" />
+    <meta name="msapplication-TileColor" content="#111" />
     <!-- ==== Meta ogg pour le partage ==== -->
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:type" content="fintech" />
-    <meta property="og:image" content="./assets/images/bg.png" />
+    <meta property="og:image" content="./assets/images/logo.svg" />
     <meta property="og:title" content="RAFT" />
     <meta
       property="og:description"
-      content="Bienvenue sur notre page de téléchargement. Accédez rapidement à vos résultats pour préparer votre rentrée."
+      content="Bienvenue sur Raft la plateforme de gestion financière moderne. Découvrez nos solutions de paiement, d'investissement et de gestion de patrimoine."
     />
     <title>RAFT | By MakVieSAinte</title>
     <!-- ==== Favicon du site web ==== -->
     <link
       rel="apple-touch-icon"
-      type="image/png"
+      type="image/svg"
       sizes="192x192"
-      href="./assets/images/logo.png"
+      href="./assets/images/logo.svg"
     />
     <link
       rel="icon"
-      type="image/png"
+      type="image/svg"
       sizes="512x512"
-      href="./assets/images/logo.png"
+      href="./assets/images/logo.svg"
     />
     <link
       rel="icon"
-      type="image/png"
+      type="image/svg"
       sizes="192x192"
-      href="./assets/images/logo.png"
+      href="./assets/images/logo.svg"
     />
     <link
       rel="icon"
-      type="image/png"
+      type="image/svg"
       sizes="32x32"
-      href="./assets/images/logo.png"
+      href="./assets/images/logo.svg"
     />
     <link
       rel="icon"
-      type="image/png"
+      type="image/svg"
       sizes="16x16"
-      href="./assets/images/logo.png"
+      href="./assets/images/logo.svg"
+    />
+    <!-- Favicons supplémentaires -->
+    <link
+      rel="mask-icon"
+      href="./assets/images/safari-pinned-tab.svg"
+      color="#1EE31E"
     />
     <!-- ==== Css fichiers ==== -->
-    <link rel="stylesheet" type="text/css" href="./dist/output.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/input.css" />
+    <link rel="stylesheet" type="text/css" href="./dist/output.css" />
     <!-- ==== Police d'ecriture & icones ==== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,7 +117,7 @@
           extend: {
             fontSize: {
               "base-mini": "18px",
-              base: "24px",
+              base: "27px",
             },
             colors: {
               primary: "#2B892E",
@@ -104,25 +142,25 @@
       <div class="container-fluid mx-auto">
         <!-- Navigation -->
         <div
-          class="flex items-center justify-between px-[40px] py-[16px] border-b-[0.3px] border-secondary max-sm:px-4"
+          class="flex items-center justify-between px-[40px] py-[16px] border-b-[0.3px] border-[#3D3D3D]/30 max-sm:px-4"
         >
           <!-- Logo -->
           <a
             href="./index.html"
-            class="text-2xl flex gap-[4px] flex-basis-0 font-bold text-green-500"
+            class="text-2xl flex items-center justify-start gap-[4px] flex-basis-0 font-bold text-green-500"
           >
             <img
               src="./assets/images/logo.svg"
               alt="logo"
-              width="30px"
-              height="30px"
+              width="50px"
+              height="50px"
             />
-            <span class="text-white text-base">Raft</span>
+            <span class="text-white text-[28px]">Raft</span>
           </a>
 
           <!-- Navigation Links -->
           <nav class="relative">
-            <!-- Desktop Menu (existant) -->
+            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-8">
               <ul class="flex space-x-4">
                 <li>
@@ -150,7 +188,7 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden flex items-center">
+            <button id="mobile-menu-button" class="md:hidden flex items-center z-50">
               <svg
                 class="w-6 h-6 text-white"
                 fill="none"
@@ -195,28 +233,21 @@
                     <a
                       href="#"
                       class="text-white text-2xl font-medium hover:text-primary transition-colors"
+                      >Solutions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white text-2xl font-medium hover:text-primary transition-colors"
+                      >Learn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white text-2xl font-medium hover:text-primary transition-colors"
                       >About</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white text-2xl font-medium hover:text-primary transition-colors"
-                      >Features</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white text-2xl font-medium hover:text-primary transition-colors"
-                      >Pricing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white text-2xl font-medium hover:text-primary transition-colors"
-                      >Contact</a
                     >
                   </li>
                 </ul>
@@ -237,7 +268,7 @@
           class="container mx-auto bg-grid-bg bg-cover w-[896px] h-[443px] flex flex-col items-center justify-start mt-[120px] max-sm:w-full max-sm:h-auto max-sm:px-4 max-sm:mt-8 max-sm:pb-8"
         >
           <span
-            class="flex items-center justify-center gap-[10px] text-base-mini font-medium text-white bg-[#989898]/10 border-[0.2px] border-[#989898]/10 px-[20px] py-[6px] rounded-[100px] max-sm:text-[14px] max-sm:px-4 max-sm:py-2"
+            class="flex items-center justify-center gap-[10px] text-base-mini font-medium text-white bg-secondary/50 border-[0.2px] border-[#989898]/10 px-[20px] py-[6px] rounded-[100px] max-sm:text-[14px] max-sm:px-4 max-sm:py-2"
           >
             Introducing Raft Cards
             <svg
@@ -262,14 +293,14 @@
             Building the future of banking.
           </h1>
           <span
-            class="w-[568px] text-secondary-two text-base text-center mt-6 max-sm:w-full max-sm:text-[16px]"
+            class="w-[568px] text-secondary-two font-medium text-base text-center mt-6 max-sm:w-full max-sm:text-[18px]"
           >
             Experience the future of banking with RAFT. We're here to empower
             your financial journey.
           </span>
 
           <button
-            class="bg-primary px-[20px] py-[8px] mt-8 rounded-[100px] text-white text-[16px] max-sm:w-full"
+            class="bg-primary px-[22px] py-[9px] mt-8 mb-2 rounded-[100px] text-white text-[18px] max-sm:w-full"
           >
             Get started
           </button>
@@ -495,13 +526,17 @@
           cost-effective. That's why we offer you the freedom you deserve
         </span>
 
-        <div class="container mx-auto mt-[60px] md:mt-[120px]">
-          <img
-            src="./assets/images/freedom.png"
-            alt="image hero"
-            class="w-full h-full object-cover rounded-lg"
-          />
-        </div>
+        
+
+        <div
+        class="container hero-bg mx-auto mt-[50px] rounded-md overflow-hidden max-sm:mt-5 max-sm:px-4"
+      >
+        <img
+          src="./assets/images/freedom.png"
+          alt="image hero"
+          class="w-full h-full object-cover max-sm:h-[400px] rounded-md overflow-hidden"
+        />
+      </div>
 
         <div class="container mx-auto mt-10 px-4">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
