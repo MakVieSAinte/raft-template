@@ -158,6 +158,92 @@ class ResponsiveCarousel {
         
 
 
+class AnimatedCounter {
+            constructor() {
+                this.counters = document.querySelectorAll('.counter');
+                this.hasAnimated = false;
+                this.init();
+            }
+
+            init() {
+                // Observer pour détecter quand la section entre dans le viewport
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && !this.hasAnimated) {
+                            this.hasAnimated = true;
+                            this.startCountAnimation();
+                        }
+                    });
+                }, {
+                    threshold: 0.5 // Déclenche quand 50% de la section est visible
+                });
+
+                observer.observe(document.getElementById('counters-section'));
+            }
+
+            formatNumber(num, suffix = '', decimal = 0) {
+                if (suffix === 'M') {
+                    // Pour les millions, afficher comme "3M"
+                    const millions = num / 1000000;
+                    if (millions >= 1) {
+                        return millions.toFixed(decimal) + 'M';
+                    }
+                }
+                
+                if (decimal > 0) {
+                    return num.toFixed(decimal);
+                }
+                
+                // Formatage avec des virgules pour les grands nombres
+                return num.toLocaleString();
+            }
+
+            animateCounter(counter) {
+                const target = parseInt(counter.dataset.target);
+                const suffix = counter.dataset.suffix || '';
+                const decimal = parseInt(counter.dataset.decimal) || 0;
+                const duration = 2000; // 2 secondes
+                const stepTime = 16; // ~60fps
+                const steps = duration / stepTime;
+                const increment = target / steps;
+                
+                let current = 0;
+                let step = 0;
+
+                const timer = setInterval(() => {
+                    step++;
+                    current += increment;
+                    
+                    // Utiliser une fonction d'easing pour un effet plus naturel
+                    const progress = step / steps;
+                    const easedProgress = this.easeOutQuart(progress);
+                    const value = Math.floor(target * easedProgress);
+                    
+                    counter.textContent = this.formatNumber(value, suffix, decimal);
+                    
+                    if (step >= steps) {
+                        clearInterval(timer);
+                        // S'assurer que la valeur finale est exacte
+                        counter.textContent = this.formatNumber(target, suffix, decimal);
+                    }
+                }, stepTime);
+            }
+
+            // Fonction d'easing pour un effet plus naturel
+            easeOutQuart(t) {
+                return 1 - Math.pow(1 - t, 4);
+            }
+
+            startCountAnimation() {
+                this.counters.forEach((counter, index) => {
+                    // Délai échelonné pour un effet en cascade
+                    setTimeout(() => {
+                        this.animateCounter(counter);
+                    }, index * 200);
+                });
+            }
+        }
+
 
 
 
@@ -242,5 +328,7 @@ class ResponsiveCarousel {
 
   
   new ResponsiveCarousel();
+
+  new AnimatedCounter();
 
 })
