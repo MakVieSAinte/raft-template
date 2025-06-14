@@ -7,17 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="robots" content="INDEX, FOLLOW" />
-    <!-- Contrôle du cache et sécurité -->
-    <meta
-      http-equiv="Cache-Control"
-      content="no-cache, no-store, must-revalidate"
-    />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self' https:; img-src 'self' https: data:; style-src 'self' https: 'unsafe-inline';"
-    />
     <!-- Meta pour l'accessibilité -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -639,7 +628,7 @@
         class="container-fluid bg-[#48D64C] h-max md:h-screen flex items-center justify-center mt-20 px-4 md:px-20 py-16"
       >
         <h1
-          class="text-[100px] md:text-[160px] text-[#070606] text-left leading-[1] max-w-7xl mx-auto"
+          class="text-[70px] sm:text-[100px] md:text-[130px] 2xl:text-[160px] text-[#070606] text-left leading-[1] max-w-7xl mx-auto"
         >
           Smart investments, secure payments, and expert guidance, all in one
           place.
@@ -802,6 +791,7 @@
           <!-- Image section -->
         </div>
       </section>
+       
       <div class="bg-[#48D64C] container-fluid w-full h-full max-sm:h-[50vh] mt-28 overflow-hidden">
         <img
           src="./assets/images/financial.png"
@@ -847,19 +837,11 @@
             <!-- Contactless Technology -->
             <div class="p-4 md:p-0">
               <div class="flex items-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-8 w-8 text-white mr-2"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z"
-                  />
-                  <path
-                    d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V7.875C3 6.839 3.84 6 4.875 6Z"
-                  />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-8 w-8 text-white mr-2">
+  <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z" />
+  <path d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V7.875C3 6.839 3.84 6 4.875 6Z" />
+</svg>
+
                 <h3 class="text-[20px] md:text-[24px] font-medium text-white">
                   Contactless Technology
                 </h3>
@@ -925,188 +907,156 @@
 
       <!-- SECTION TESTIMONIAL -->
       <section>
-        <div class="bg-[#48D64C] h-screen max-sm:h-max max-lg:h-max overflow-hidden text-black py-16 px-4 md:px-20 mt-20">
+        <div class="bg-[#48D64C] min-h-screen max-sm:min-h-max max-lg:min-h-max overflow-hidden text-black py-16 px-4 md:px-20 mt-20">
             <div class="w-full max-sm:px-3 max-lg:px-[90px] max-xl:px-[100px] max-2xl:px-[120px] flex flex-col gap-5 items-center text-center text-wrap text-black justify-center mt-2 mb-24 max-sm:mt-4 max-sm:mb-12">
-            <h1
-            class="text-black text-4xl tracking-tighter lg:text-5xl xl:text-6xl"
-          >
-           Join over 3 million <br> members
-          </h1>
-          </div>
-
-          <!-- Carousel viewport -->
-          <div class="overflow-hidden">
-            <div
-              id="carousel-track"
-              class="flex transition-transform duration-500 ease-in-out"
-              style="transform: translateX(0%)"
-            >
-              <!-- Testimonial Card -->
-              <div
-                class="w-full md:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0"
-              >
-                <p class="mb-6 text-base md:text-lg">
-                  RAFT has transformed my approach to finance. Their smart
-                  investing options have helped me grow my wealth, and their
-                  user-friendly platform makes managing my money a breeze. I've
-                  never felt more confident about my financial future.
-                </p>
-
-                <!-- Author -->
-                <div class="flex items-center space-x-4">
-                  <img
-                    src="https://randomuser.me/api/portraits/men/54.jpg"
-                    class="w-8 h-8 md:w-10 md:h-10 rounded-full"
-                    alt="Profile"
-                  />
-                  <div>
-                    <p class="font-semibold text-sm md:text-base">Robert Fox</p>
-                    <p class="text-xs md:text-sm text-gray-900">
-                      Happy RAFT User
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Testimonial Card -->
-              <div
-                class="w-full md:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0"
-              >
-                <p class="mb-6 text-base md:text-lg">
-                  RAFT has transformed my approach to finance. Their smart
-                  investing options have helped me grow my wealth, and their
-                  user-friendly platform makes managing my money a breeze. I've
-                  never felt more confident about my financial future.
-                </p>
-
-                <!-- Author -->
-                <div class="flex items-center space-x-4">
-                  <img
-                    src="https://randomuser.me/api/portraits/men/54.jpg"
-                    class="w-8 h-8 md:w-10 md:h-10 rounded-full"
-                    alt="Profile"
-                  />
-                  <div>
-                    <p class="font-semibold text-sm md:text-base">Robert Fox</p>
-                    <p class="text-xs md:text-sm text-gray-900">
-                      Happy RAFT User
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Testimonial Card -->
-              <div
-                class="w-full md:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0"
-              >
-                <p class="mb-6 text-base md:text-lg">
-                  RAFT has transformed my approach to finance. Their smart
-                  investing options have helped me grow my wealth, and their
-                  user-friendly platform makes managing my money a breeze. I've
-                  never felt more confident about my financial future.
-                </p>
-
-                <!-- Author -->
-                <div class="flex items-center space-x-4">
-                  <img
-                    src="https://randomuser.me/api/portraits/men/54.jpg"
-                    class="w-8 h-8 md:w-10 md:h-10 rounded-full"
-                    alt="Profile"
-                  />
-                  <div>
-                    <p class="font-semibold text-sm md:text-base">Robert Fox</p>
-                    <p class="text-xs md:text-sm text-gray-900">
-                      Happy RAFT User
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Testimonial Card -->
-              <div
-                class="w-full md:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0"
-              >
-                <p class="mb-6 text-base md:text-lg">
-                  RAFT has transformed my approach to finance. Their smart
-                  investing options have helped me grow my wealth, and their
-                  user-friendly platform makes managing my money a breeze. I've
-                  never felt more confident about my financial future.
-                </p>
-
-                <!-- Author -->
-                <div class="flex items-center space-x-4">
-                  <img
-                    src="https://randomuser.me/api/portraits/men/54.jpg"
-                    class="w-8 h-8 md:w-10 md:h-10 rounded-full"
-                    alt="Profile"
-                  />
-                  <div>
-                    <p class="font-semibold text-sm md:text-base">Robert Fox</p>
-                    <p class="text-xs md:text-sm text-gray-900">
-                      Happy RAFT User
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Testimonial Card -->
-              <div
-                class="w-full md:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0"
-              >
-                <p class="mb-6 text-base md:text-lg">
-                  RAFT has transformed my approach to finance. Their smart
-                  investing options have helped me grow my wealth, and their
-                  user-friendly platform makes managing my money a breeze. I've
-                  never felt more confident about my financial future.
-                </p>
-
-                <!-- Author -->
-                <div class="flex items-center space-x-4">
-                  <img
-                    src="https://randomuser.me/api/portraits/men/54.jpg"
-                    class="w-8 h-8 md:w-10 md:h-10 rounded-full"
-                    alt="Profile"
-                  />
-                  <div>
-                    <p class="font-semibold text-sm md:text-base">Robert Fox</p>
-                    <p class="text-xs md:text-sm text-gray-900">
-                      Happy RAFT User
-                    </p>
-                  </div>
-                </div>
-              </div>
+                <h1 class="text-black text-4xl tracking-tighter lg:text-5xl xl:text-6xl">
+                    Join over 3 million <br> members
+                </h1>
             </div>
-          </div>
 
-          <!-- Navigation Buttons -->
-          <div class="flex justify-end space-x-4 mt-8 md:mt-12 px-4">
-            <button
-              id="prevBtn"
-              class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-white rounded-full hover:bg-gray-200 border border-black transition"
-            >
-              <svg
-                class="w-4 h-4 md:w-5 md:h-5 text-black"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button
-              id="nextBtn"
-              class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-white rounded-full hover:bg-gray-200 border border-black transition"
-            >
-              <svg
-                class="w-4 h-4 md:w-5 md:h-5 text-black"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
+            <!-- Carousel viewport -->
+            <div class="overflow-hidden">
+                <div
+                    id="carousel-track"
+                    class="flex transition-transform duration-500 ease-in-out"
+                    style="transform: translateX(0%)"
+                >
+                    <!-- Testimonial Card 1 -->
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0">
+                        <p class="mb-6 text-base md:text-lg">
+                            RAFT has transformed my approach to finance. Their smart
+                            investing options have helped me grow my wealth, and their
+                            user-friendly platform makes managing my money a breeze. I've
+                            never felt more confident about my financial future.
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/54.jpg"
+                                class="w-8 h-8 md:w-10 md:h-10 rounded-full"
+                                alt="Profile"
+                            />
+                            <div>
+                                <p class="font-semibold text-sm md:text-sm">Robert Fox</p>
+                                <p class="text-xs md:text-sm text-gray-900">Happy RAFT User</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 2 -->
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0">
+                        <p class="mb-6 text-base md:text-lg">
+                            The customer service at RAFT is exceptional. Whenever I have questions,
+                            their team responds quickly and professionally. The platform is intuitive
+                            and has helped me make better financial decisions consistently.
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/32.jpg"
+                                class="w-8 h-8 md:w-10 md:h-10 rounded-full"
+                                alt="Profile"
+                            />
+                            <div>
+                                <p class="font-semibold text-sm md:text-sm">Sarah Johnson</p>
+                                <p class="text-xs md:text-sm text-gray-900">Satisfied Customer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 3 -->
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0">
+                        <p class="mb-6 text-base md:text-lg">
+                            I've been using RAFT for over a year now, and the results speak for themselves.
+                            My portfolio has grown significantly, and I love how easy it is to track
+                            my investments and make adjustments when needed.
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/18.jpg"
+                                class="w-8 h-8 md:w-10 md:h-10 rounded-full"
+                                alt="Profile"
+                            />
+                            <div>
+                                <p class="font-semibold text-sm md:text-sm">Michael Chen</p>
+                                <p class="text-xs md:text-sm text-gray-900">Long-term User</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 4 -->
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0">
+                        <p class="mb-6 text-base md:text-lg">
+                            As a beginner in investing, RAFT made everything simple and accessible.
+                            Their educational resources and smart recommendations helped me start
+                            my investment journey with confidence and clarity.
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/45.jpg"
+                                class="w-8 h-8 md:w-10 md:h-10 rounded-full"
+                                alt="Profile"
+                            />
+                            <div>
+                                <p class="font-semibold text-sm md:text-sm">Emma Wilson</p>
+                                <p class="text-xs md:text-sm text-gray-900">New Investor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 5 -->
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-4 border-l-2 border-black pl-4 shrink-0">
+                        <p class="mb-6 text-base md:text-lg">
+                            RAFT's mobile app is fantastic! I can manage my investments on the go,
+                            and the real-time updates keep me informed about my portfolio performance.
+                            It's exactly what I needed for my busy lifestyle.
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/72.jpg"
+                                class="w-8 h-8 md:w-10 md:h-10 rounded-full"
+                                alt="Profile"
+                            />
+                            <div>
+                                <p class="font-semibold text-sm md:text-sm">David Martinez</p>
+                                <p class="text-xs md:text-sm text-gray-900">Mobile User</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="flex justify-end space-x-4 mt-8 md:mt-12 px-4">
+                <button
+                    id="prevBtn"
+                    class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-white rounded-full hover:bg-gray-200 border border-black transition disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                    <svg
+                        class="w-4 h-4 md:w-5 md:h-5 text-black"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                    >
+                        <path d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button
+                    id="nextBtn"
+                    class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-white rounded-full hover:bg-gray-200 border border-black transition disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                    <svg
+                        class="w-4 h-4 md:w-5 md:h-5 text-black"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                    >
+                        <path d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
         </div>
-      </section>
+    </section>
 
       <!-- FAQ -->
       <section class="my-20 px-4 md:px-20">
