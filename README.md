@@ -50,7 +50,7 @@ RAFT/
 
 1. Clonez le repository :
 ```bash
-git clone https://github.com/votre-username/raft-template.git
+git clone https://github.com/MakVieSAinte/raft-template.git
 ```
 
 2. Installez les dépendances :
@@ -58,7 +58,7 @@ git clone https://github.com/votre-username/raft-template.git
 npm install
 ```
 
-3. Lancez le serveur de développement :
+3. Lancez la compilation tailwind :
 ```bash
 npm run watch
 ```
