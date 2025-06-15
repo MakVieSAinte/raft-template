@@ -150,4 +150,10 @@ body {
   transition: opacity 0.2s ease-in-out;
 }
 
+.animate-in {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.6s ease;
+}
+
 /*  ==== 925DEV ====  */

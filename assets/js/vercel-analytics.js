@@ -1,0 +1,2 @@
+// Vercel Analytics initialization
+!function(t,e){var n,s,a;if(t.va=t.va||function(){(t.va.q=t.va.q||[]).push(arguments)},!t._vaTracker){s=e.createElement("script"),(a=e.getElementsByTagName("script")[0]).parentNode.insertBefore(s,a),s.async=!0,s.src="https://va.vercel-scripts.com/v1/script.js";try{n=t.localStorage.getItem("vahostname")}catch(t){}if(!n){try{n=t.localStorage.setItem("vahostname","")}catch(t){}}(t.va.h=n)||""}t.va("pageview")}(window,document);

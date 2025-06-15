@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=7" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />      
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="robots" content="INDEX, FOLLOW" />
   <!-- Meta pour l'accessibilité -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,20 +53,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet" />
-
-
+  <!-- Locomotive scroll -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
-
+  <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <!-- Vercel Analytics -->
   <script>
-    window.va =
-      window.va ||
-      function () {
-        (window.vaq = window.vaq || []).push(arguments);
-      };
+    window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments) };
   </script>
-  <script type="modules" defer src="./vercel-analytics.js"></script>
+  <script defer src="./assets/js/vercel-analytics.js"></script>
 
   <script>
     tailwind.config = {
@@ -96,9 +91,7 @@
 
 <body>
   <div data-scroll-container>
-
-
-    <header data-scroll-section class="!z-50">
+    <header class="!z-50">
       <div class="container-fluid mx-auto">
         <!-- Navigation -->
         <div
@@ -125,7 +118,7 @@
                   <a href="./contact.html" class="text-secondary-two hover:text-white">About</a>
                 </li>
               </ul>
-            </div>   
+            </div>
 
 
             <!-- Mobile Menu Button -->
@@ -183,8 +176,8 @@
           </nav>
 
           <div class="hidden md:flex items-center space-x-4">
-            <div class="flex gap-[16px]">     
-              <button class="px-[12px] py-[8px] rounded-[100px] text-white text-[16px]">Login</button>   
+            <div class="flex gap-[16px]">
+              <button class="px-[12px] py-[8px] rounded-[100px] text-white text-[16px]">Login</button>
               <button class="bg-primary px-[12px] py-[8px] rounded-[100px] text-white text-[16px]">Get started</button>
             </div>
           </div>
@@ -202,10 +195,11 @@
             </svg>
           </span>
 
-          <h1 class="text-white text-[96px] text-center leading-[1] mt-[24px] max-sm:text-[48px] max-sm:mt-4">
+          <h1 data-scroll
+            class="text-white text-[96px] text-center leading-[1] mt-[24px] max-sm:text-[48px] max-sm:mt-4">
             Building the future of banking.
           </h1>
-          <span
+          <span data-scroll
             class="w-[568px] text-secondary-two font-medium text-base text-center mt-6 max-sm:w-full max-sm:text-[18px]">
             Experience the future of banking with RAFT. We're here to empower
             your financial journey.
@@ -224,48 +218,51 @@
 
       <!-- HERO -->
 
-      <section data-scroll-section
-        class="container hero-bg mx-auto mt-[50px] rounded-md overflow-hidden max-sm:mt-5 max-sm:px-4 !z-0">
+      <section class="container hero-bg mx-auto mt-[50px] rounded-md overflow-hidden max-sm:mt-5 max-sm:px-4 !z-0">
         <img src="./assets/images/bg-hero.png" alt="image hero"
           class="w-full h-full object-cover max-sm:h-[400px] rounded-md overflow-hidden" />
       </section>
 
       <!-- Partners Section -->
-      <section data-scroll-section class="mt-[50px] max-sm:mt-8">
+      <section class="mt-[50px] max-sm:mt-8">
         <div class="container mx-auto flex flex-col items-center justify-center px-4">
           <h2 class="text-secondary-two text-[20px] text-center leading-tight uppercase max-sm:text-[16px]">
             Featured and seen in
           </h2>
           <div class="flex flex-wrap items-center justify-center gap-[80px] mt-[40px] max-sm:gap-8 max-sm:mt-6">
-            <img src="./assets/images/logo/Forbes.svg" alt="" class="max-sm:w-[100px]" />
-            <img src="./assets/images/logo/cnbc.svg" alt="" class="max-sm:w-[100px]" />
-            <img src="./assets/images/logo/bloomberg.svg" alt="" class="max-sm:w-[100px]" />
-            <img src="./assets/images/logo/reuters.svg" alt="" class="max-sm:w-[100px]" />
-            <img src="./assets/images/logo/cnn.svg" alt="" class="max-sm:w-[100px]" />
+            <img data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%" src="./assets/images/logo/Forbes.svg" alt="" class="max-sm:w-[100px]" />
+            <img data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%" src="./assets/images/logo/cnbc.svg" alt="" class="max-sm:w-[100px]" />
+            <img data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%" src="./assets/images/logo/bloomberg.svg" alt="" class="max-sm:w-[100px]" />
+            <img data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%" src="./assets/images/logo/reuters.svg" alt="" class="max-sm:w-[100px]" />
+            <img data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%" src="./assets/images/logo/cnn.svg" alt="" class="max-sm:w-[100px]" />
           </div>
         </div>
       </section>
 
       <!-- SECTION BENTO -->
-      <section data-scroll-section class="mt-20 flex items-center justify-center flex-col px-4">
+      <section class="mt-20 flex items-center justify-center flex-col px-4">
 
         <div class="max-w-7xl mx-auto">
           <div
             class="w-full max-sm:px-3 max-lg:px-[100px] max-xl:px-[160px] max-2xl:px-[180px] flex flex-col gap-5 items-center text-center text-wrap text-white justify-center mt-2 mb-3 max-sm:mt-4 max-sm:mb-6">
-            <h1 data-scroll data-scroll-speed="1.0" data-scroll-call="animate-text" data-scroll-repeat
-              data-scroll-offset="10%"
+            <h1 data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%"
               class="text-white text-5xl tracking-tighter font-medium lg:text-6xl xl:text-8xl opacity-1 translate-y-12 transition-all duration-700 ease-out">
               Elevate Your Financial Journey with RAFT
             </h1>
 
-            <span data-scroll data-scroll-speed="1.0" data-scroll data-scroll-delay="1.0"
+            <span data-scroll data-scroll-speed="1.5" data-scroll data-scroll-delay="1"
               class="text-base-mini font-medium text-secondary-two max-sm:px-2 px-16 opacity-1 translate-y-12 transition-all duration-700 ease-out">
               RAFT offers a world of financial possibilities. From investments to
               payments, we've got you covered. Join us and unlock your financial
               potential today.
             </span>
           </div>
-
 
           <br />
 
@@ -364,17 +361,17 @@
       </section>
 
       <!-- SECTION FREEDOM -->
-      <section data-scroll-section class="mt-20 flex items-center justify-center flex-col px-4">
+      <section class="mt-20 flex items-center justify-center flex-col px-4">
 
         <div
           class="w-full max-sm:px-3 max-lg:px-[100px] max-xl:px-[160px] max-2xl:px-[180px] flex flex-col gap-5 items-center text-center text-wrap text-white justify-center mt-2 mb-3 max-sm:mt-4 max-sm:mb-6">
-          <h1 data-scroll data-scroll-speed="1.0" data-scroll-call="animate-text" data-scroll-repeat
-            data-scroll-offset="10%"
+          <h1 data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+            data-scroll-offset="5%"
             class="text-white text-5xl tracking-tighter font-medium lg:text-6xl xl:text-8xl opacity-1 translate-y-12 transition-all duration-700 ease-out">
             Your Financial Freedom, Your Way
           </h1>
 
-          <span data-scroll data-scroll-speed="1.2" data-scroll data-scroll-delay="1.0"
+          <span data-scroll data-scroll-speed="1" data-scroll data-scroll-delay="1.5"
             class="text-base-mini font-medium text-secondary-two max-sm:px-2 px-16">
             We believe that managing your finances should be effortless and
             cost-effective. That's why we offer you the freedom you deserve.
@@ -455,10 +452,9 @@
       <br />
 
       <!-- SECTION SMART IN GREEN -->
-      <section data-scroll-section
+      <section
         class="container-fluid bg-[#48D64C] h-max md:h-screen flex items-center justify-center mt-20 px-4 md:px-20 py-16">
-        <h1 data-scroll data-scroll-speed="1.0" data-scroll-call="animate-text" data-scroll-repeat
-          data-scroll-offset="10%"
+        <h1 data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat data-scroll-offset="5%"
           class="text-[70px] sm:text-[100px] md:text-[130px] 2xl:text-[160px] text-[#070606] text-left leading-[1] max-w-7xl mx-auto opacity-1 translate-y-12 transition-all duration-700 ease-out">
           Smart investments, secure payments, and expert guidance, all in one
           place.
@@ -466,18 +462,18 @@
       </section>
 
       <!-- SECTION FUTURE -->
-      <section data-scroll-section class="container-fluid mt-20 px-4 md:px-20">
+      <section class="container-fluid mt-20 px-4 md:px-20">
         <div class="max-w-7xl mx-auto">
 
           <div
             class="w-full max-sm:pr-3 max-lg:pr-[100px] max-xl:pr-[160px] max-2xl:pr-[180px] flex flex-col gap-5 items-start text-left text-wrap text-white justify-start mt-2 mb-3 max-sm:mt-4 max-sm:mb-6">
-            <h1 data-scroll data-scroll-speed="1.0" data-scroll-call="animate-text" data-scroll-repeat
-              data-scroll-offset="10%"
+            <h1 data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%"
               class="text-white text-5xl tracking-tighter font-medium lg:text-6xl xl:text-8xl opacity-1 translate-y-12 transition-all duration-700 ease-out">
               Confidently Shape Your Financial Future
             </h1>
 
-            <span data-scroll data-scroll-speed="1.2" data-scroll data-scroll-delay="1.0"
+            <span data-scroll data-scroll-speed="1" data-scroll data-scroll-delay="1.5"
               class="text-base-mini font-medium text-secondary-two max-sm:pr-4 pr-16">
               At RAFT, we empower you to confidently shape your financial future.
               Our modern approach simplifies saving and investing, making it
@@ -590,25 +586,26 @@
         </div>
       </section>
 
-      <div data-scroll-section class="bg-[#48D64C] container-fluid w-full h-full max-sm:h-[50vh] mt-28 overflow-hidden">
+      <div class="container-fluid w-full h-full max-sm:h-[50vh] mt-28 overflow-hidden">
         <img src="./assets/images/financial.png" alt="" class="w-full h-full object-cover" />
       </div>
 
       <!-- SECTION INTRODUCING -->
-      <section data-scroll-section class="mt-20 flex items-center justify-center flex-col px-4">
+      <section class="mt-20 flex items-center justify-center flex-col px-4">
         <!-- Label -->
-        <span class="w-full md:w-[568px] text-primary text-base-mini text-center uppercase my-6">
+        <span data-scroll data-scroll-speed="0.8" data-scroll data-scroll-delay="0.8"
+          class="w-full md:w-[568px] text-primary text-base-mini text-center uppercase my-6">
           INTRODUCING
         </span>
         <div
           class="w-full max-sm:px-3 max-lg:px-[110px] max-xl:px-[170px] max-2xl:px-[190px] flex flex-col gap-5 items-center text-center text-wrap text-white justify-center mt-2 mb-3 max-sm:mt-4 max-sm:mb-6">
-          <h1 data-scroll data-scroll-speed="1.0" data-scroll-call="animate-text" data-scroll-repeat
-            data-scroll-offset="10%"
+          <h1 data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+            data-scroll-offset="5%"
             class="text-white text-5xl tracking-tighter font-medium lg:text-6xl xl:text-8xl opacity-1 translate-y-12 transition-all duration-700 ease-out">
             Introducing RAFT's Next-Gen Cards
           </h1>
 
-          <span data-scroll data-scroll-speed="1.2" data-scroll data-scroll-delay="1.0"
+          <span data-scroll data-scroll-speed="1" data-scroll data-scroll-delay="1.5"
             class="text-base-mini font-medium text-secondary-two max-sm:px-2 px-24">
             Discover RAFT's latest innovation – our new cards. Elevate your
             banking experience with cutting-edge features, security, and
@@ -689,13 +686,12 @@
       </section>
 
       <!-- SECTION TESTIMONIAL -->
-      <section data-scroll-section
-        class="container-fluid bg-[#48D64C] h-max md:h-max xl:h-max mt-20 px-4 md:px-20 py-20 max-md:py-5">
+      <section class="container-fluid bg-[#48D64C] h-max md:h-max xl:h-max mt-20 px-4 md:px-20 py-20 max-md:py-5">
         <div class="bg-[#48D64C] overflow-hidden text-black">
           <div
             class="w-full max-sm:px-3 max-lg:px-[90px] max-xl:px-[100px] max-2xl:px-[120px] flex flex-col gap-5 items-center text-center text-wrap text-black justify-center mt-2 mb-24 max-sm:mt-4 max-sm:mb-12">
-            <h1 data-scroll data-scroll-speed="1.0" data-scroll-call="animate-text" data-scroll-repeat
-              data-scroll-offset="10%"
+            <h1 data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%"
               class="text-black text-4xl tracking-tighter lg:text-5xl xl:text-6xl opacity-1 translate-y-12 transition-all duration-700 ease-out">
               Join over 3 million <br> members
             </h1>
@@ -815,13 +811,13 @@
       </section>
 
       <!-- FAQ -->
-      <section data-scroll-section class="container-fluid mt-20 px-4 md:px-20">
+      <section class="container-fluid mt-20 px-4 md:px-20">
         <div class="max-w-7xl mx-auto">
 
           <div
             class="w-full max-sm:pr-3 max-lg:pr-[140px] max-xl:pr-[190px] max-2xl:pr-[210px] flex flex-col gap-5 items-start text-left text-wrap text-white justify-start mt-2 mb-3 max-sm:mt-4 max-sm:mb-6">
-            <h1 data-scroll data-scroll-speed="1.0" data-scroll-call="animate-text" data-scroll-repeat
-              data-scroll-offset="10%"
+            <h1 data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%"
               class="text-white text-5xl tracking-tighter font-medium lg:text-6xl xl:text-8xl opacity-1 translate-y-12 transition-all duration-700 ease-out">
               Frequently asked <br> questions
             </h1>
@@ -830,7 +826,9 @@
           <!-- Accordion Items -->
           <div class="container m-auto mt-12 md:mt-20">
             <!-- Item 1 -->
-            <div class="accordion-item border-b border-gray-700/20">
+            <div data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%" data-scroll data-scroll-delay="1.1"
+              class="accordion-item border-b border-gray-700/20">
               <button
                 class="accordion-header text-white w-full text-left py-4 md:py-6 text-[28px] font-medium flex justify-between items-center">
                 How do I create an account with RAFT?
@@ -850,7 +848,9 @@
             </div>
 
             <!-- Item 2 -->
-            <div class="accordion-item border-b border-gray-700/20">
+            <div data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%" data-scroll data-scroll-delay="1.3"
+              class="accordion-item border-b border-gray-700/20">
               <button
                 class="accordion-header text-white w-full text-left py-4 md:py-6 text-[28px] font-medium flex justify-between items-center">
                 How does RAFT ensure the security of my financial data?
@@ -870,7 +870,9 @@
             </div>
 
             <!-- Item 3 -->
-            <div class="accordion-item border-b border-gray-700/20">
+            <div data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%" data-scroll data-scroll-delay="1.5"
+              class="accordion-item border-b border-gray-700/20">
               <button
                 class="accordion-header text-white w-full text-left py-4 md:py-6 text-[28px] font-medium flex justify-between items-center">
                 What types of transactions can I perform with RAFT?
@@ -890,7 +892,9 @@
             </div>
 
             <!-- Item 4 -->
-            <div class="accordion-item border-b border-gray-700/20">
+            <div data-scroll data-scroll-speed="1" data-scroll-call="animate-text" data-scroll-repeat
+              data-scroll-offset="5%" data-scroll data-scroll-delay="1.7"
+              class="accordion-item border-b border-gray-700/20">
               <button
                 class="accordion-header text-white w-full text-left py-4 md:py-6 text-[28px] font-medium flex justify-between items-center">
                 What benefits does RAFT offer for wealth management?
@@ -916,7 +920,7 @@
 
     <!-- FOOTER -->
 
-    <footer data-scroll-section class="text-secondary-two py-6 md:py-10 mt-8 md:mt-16">
+    <footer class="text-secondary-two py-6 md:py-10 mt-8 md:mt-16">
       <div class="container mx-auto px-4">
         <!-- Top Section -->
         <div class="flex flex-col md:flex-row items-center justify-between border-b border-gray-800 pb-6 mb-6">
@@ -1015,24 +1019,52 @@
 
   <!-- ==== Script ==== -->
 
-
+  <script src="./assets/js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-
-
   <script>
+
+    // Initialisation
     const scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
       smooth: true,
       lerp: 0.07,
       smartphone: {
-        smooth: true
+        smooth: true,
       },
       tablet: {
-        smooth: true
+        smooth: true,
+      },
+    });
+
+    // Animation à l'entrée des éléments
+    scroll.on('call', (value, way, obj) => {
+      if (value === 'animate-text' && way === 'enter') {
+        obj.el.classList.add('animate-in');
       }
     });
+
+    // ✅ Mise à jour après chargement complet 
+    window.addEventListener('load', () => {
+      scroll.update();
+    });
+
+    // ✅ Observer pour mise à jour automatique si le DOM change
+    const observer = new MutationObserver(() => {
+      scroll.update();
+    });
+
+    observer.observe(document.querySelector('[data-scroll-container]'), {
+      childList: true,
+      subtree: true,
+    });
+
+    // ✅ Mise à jour après délai si contenu injecté tardivement
+    setTimeout(() => {
+      scroll.update();
+    }, 1000);
+
   </script>
-  <script src="./assets/js/index.js"></script>
+
 </body>
 
 </html>
